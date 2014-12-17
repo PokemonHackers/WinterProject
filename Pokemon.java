@@ -9,9 +9,10 @@ public abstract class Pokemon {
     protected boolean lake;
     protected boolean grass;
     protected int price;
+    protected int population;
     protected String description;
 
-    public int get_price(){
+    public int getPrice(){
         return price;
     }
 
@@ -42,10 +43,13 @@ public abstract class Pokemon {
         return grass;
     }
 
-    public void set_population(int new_pop){
-        population = new_pop;
+    public int getPopulation() {
+        return population;
     }
 
+    public void set_population(int newPop) {
+        population = newPop;
+    }
+    
     public abstract String toString();
-    public abstract int getPopulation();
 }
