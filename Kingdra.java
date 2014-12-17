@@ -1,7 +1,5 @@
 public class Kingdra extends Pokemon{
 
-    private int population;
-
     public Kingdra(){
         carnivore = true;
         prey_rank = 4;
@@ -13,14 +11,9 @@ public class Kingdra extends Pokemon{
         lake = true;
         grass = false;
         price = 1100;
-        description = "These fearsome dragons are destructive creatures. They hunt and kill easily.";
     } // change this to the pokemon name
 
     public String toString(){
-        return description;
-    }
-
-    public int getPopulation() {
-        return population;
+        return "These fearsome dragons are destructive creatures. They hunt and kill easily.";
     }
 }
